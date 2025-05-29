@@ -102,3 +102,7 @@ h1 {
     border: #23395b;
     box-shadow: 0 0 4px#16253a;
 }
+
+nav {
+    text-decoration: none;
+}

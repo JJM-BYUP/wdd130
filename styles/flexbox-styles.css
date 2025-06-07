@@ -4,41 +4,47 @@ body {
   max-width: 960px;
   margin: 10px auto;
 }
+
 header {
   background: purple;
   height: 100px;
 }
+
 h1 {
   text-align: center;
   color: white;
   line-height: 100px;
   margin: 0;
 }
+
 section {
   zoom: 0.8;
 }
+
 article {
   padding: 10px;
   margin: 10px;
   background: aqua;
 }
+
 /* Add your flexbox CSS below here  */
- section {
+section {
   display: flex;
- }
+}
 
- article {
+article {
   flex: 1 100px;
- }
+}
 
- article:nth-of-type(3) {
-  flex:3 100px;
+article:nth-of-type(3) {
+  flex: 3 100px;
   display: flex;
   flex-flow: column;
- }
+}
+
 /* Example 01 ended here. Start of Example 02  */
- article:nth-of-type(3) div:first-child {
-  flex:1 100px;
+article:nth-of-type(3) div:first-child {
+  flex: 1 100px;
   display: flex;
   flex-flow: row wrap;
   align-items: center;
@@ -54,6 +60,7 @@ button {
   line-height: 1.5;
   /* width: 15%; */
 }
+
 /* Add your flexbox CSS below here  */
 div {
   display: flex;
@@ -64,4 +71,3 @@ div {
 /* button:last-child {
   order: -1;
 } */
-

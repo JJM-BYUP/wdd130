@@ -1,14 +1,14 @@
 :root {
-    --primary-color: #f0a202;
-    /* gamboge */
+    --primary-color: #fead34;
+    /* orange (web)*/
     --secondary-color: #23395b;
     /* delft blue */
-    --accent1-color: #F7FFE0;
-    /* light yellow */
-    --accent2-color: #0C5532;
+    --accent1-color: #F3F3F3;
+    /* white smoke*/
+    --accent2-color: #0F6B3F;
     /* castleton green */
     --accent3-color: #161923;
-    /* raisin Black */
+    /* rich black */
     --heading-font: "Fraunces", sans-serif;
     --body-font: "Public Sans", sans-serif;
 }
@@ -32,9 +32,10 @@ footer {
 }
 
 h1,
-h2 {
+h2,
+h3 {
     font-family: var(--heading-font);
-    color: var(--accent2-color);
+    color: var(--secondary-color);
 }
 
 nav,
@@ -58,11 +59,15 @@ header {
 .logo {
     grid-column: 2;
     padding: 10px;
-    width: 160px;
+    width: 150px;
     height: auto;
+    border: 1px solid var(--accent3-color);
+    border-style: outset;
+    border-radius: 4px;
+    background-color: var(--secondary-color);
 }
 
-.map {
+.navagation-links {
     display: flex;
     flex: 1 1 auto;
     flex-basis: auto;
@@ -71,13 +76,15 @@ header {
     justify-content: center;
 }
 
-.map a {
+.navagation-links a {
     flex: stretch;
     padding: 15px;
-    border: 1px solid var(--accent3-color);
-    background-color: var(--accent1-color);
-    color: var(--accent3-color);
+    margin: 6px;
+    border: .5px solid var(--accent3-color);
+    background-color: var(--secondary-color);
+    color: var(--accent1-color);
     text-decoration: none;
+    border-radius: 15px;
 }
 
 /* rafting.html page formatting */
@@ -96,33 +103,35 @@ header {
 .hero h1 {
     position: absolute;
     top: 70px;
-    width: 55%;
+    width: 50%;
     padding: 16px;
-    margin-left: 45%;
+    margin-left: 50%;
     text-align: center;
-    border-radius: 20%;
+    border-radius: 35px;
     opacity: 0.8;
     background-color: var(--accent1-color);
     color: var(--accent3-color);
+    border: .5px solid var(--secondary-color);
 }
 
 .hero article {
     position: absolute;
     top: 355px;
-    width: 48%;
-    padding: 13px;
-    margin-left: 52%;
+    width: 45%;
+    padding: 5px;
+    margin-left: 55%;
     text-align: center;
-    border-radius: 20%;
+    border-radius: 35px;
     opacity: 0.8;
     background-color: var(--accent1-color);
     color: var(--accent3-color);
+    border: .5px solid var(--secondary-color);
 }
 
 .hero article img {
     float: right;
     width: 140px;
-    margin: 6px;
+    margin: 15px;
     border: #23395b;
     box-shadow: 0 0 4px#16253a;
 }
@@ -226,7 +235,7 @@ footer {
 }
 
 /* contact.html page formatting: header & footer (+ wireframe link) done*/
-.contact-header {
+.contact-heading {
     width: 840px;
     font-size: 33px;
     padding: 3rem 10rem 2rem 10rem;
@@ -240,13 +249,32 @@ footer {
     padding: 0;
     height: 300px;
     flex: 1 1 auto;
-    grid-template-columns: 13% 12% 25% 50%;
-    grid-template-rows: 35px repeat(6, 35px);
+    grid-template-columns: 20% 30% 50%;
+    grid-template-rows: 35px 200px;
     box-sizing: border-box;
 }
 
+address {
+    margin-top: 20px;
+    font-family: var(--body-font);
+    font-weight: 600;
+    font-size: large;
+    font-style: normal;
+    color: var(--accent3-color);
+}
+
+.info-types {
+    grid-row-start: 2;
+    padding-left: 50px;
+}
+
+.address-info {
+    grid-row-start: 2;
+}
+
 .google-map {
-    grid-area: 1/4/8/5;
+    grid-area: 1/3/3/3;
+    border: 1px solid var(--accent2-color);
 }
 
 iframe {
@@ -255,52 +283,7 @@ iframe {
 }
 
 .company-info h2 {
-    grid-area: 1/1/2/3;
-}
-
-.address {
-    grid-area: 2/1/3/2;
-}
-
-.street {
-    grid-area: 2/2/3/4;
-}
-
-.state {
-    grid-area: 3/2/4/4;
-}
-
-.zip {
-    grid-area: 4/2/5/4;
-}
-
-.phone {
-    grid-area: 5/1/6/2;
-}
-
-.email {
-    grid-area: 6/1/7/2;
-}
-
-.address,
-.street,
-.state,
-.zip,
-.phone,
-.email,
-.ph-num,
-.em-addr {
-    font-family: var(--body-font);
-    font-weight: bold;
-    font-size: large;
-}
-
-.ph-num {
-    grid-area: 5/2/6/4;
-}
-
-.em-addr {
-    grid-area: 6/2/7/4;
+    grid-row: 1;
 }
 
 /* Happy Employee Section with img and caption*/
@@ -340,15 +323,12 @@ iframe {
 .e1 figcaption,
 .e2 figcaption,
 .e3 figcaption {
-    display: block;
+    /* display: block; */
     width: 225px;
-    height: auto;
-    display: flex;
-    justify-self: center;
-    align-self: center;
+    height: 300px;
     padding: 5px;
     background-color: var(--accent2-color);
-    color: var(--accent1-color);
+    color: #FFFFFF;
 }
 
 /* Form section */
@@ -380,8 +360,7 @@ button {
 }
 
 .fullname label,
-.user-email label,
-.group,
+.user-input,
 .checkbox input {
     font-weight: bolder;
     font-size: 18px;
@@ -401,13 +380,12 @@ input {
     border-style: outset;
 }
 
-.fullname label,
-.user-email label {
+.fullname label {
     width: 30px;
     display: inline-block;
 }
 
-.group {
+.user-input {
     margin-right: 11.5rem;
     margin-top: 1px;
     margin-bottom: 5px;
@@ -418,7 +396,7 @@ legend {
     font-size: 16px;
 }
 
-.group [type="radio"] {
+.user-input [type="radio"] {
     width: 1.2rem;
     margin-left: 9.5rem;
     margin-right: .5rem;
@@ -427,7 +405,7 @@ legend {
     border-style: outset;
 }
 
-.group label {
+.user-input label {
     font-size: 15px;
     font-weight: 650;
 }

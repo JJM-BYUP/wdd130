@@ -19,7 +19,7 @@
 <body>
     <header>
         <img class="logo" src="images/z-wwr-blue.jpg" alt="Whitewater Rafting Logo">
-        <nav class="map">
+        <nav class="navagation-links">
             <a href="index.html">Home</a>
             <a href="about.html">About Us</a>
             <a href="trips.html">Trips</a>
@@ -27,22 +27,30 @@
         </nav>
     </header>
     <main>
-        <h1 class="contact-header">Whitewater Rafting Excursions</h1>
+        <h1 class="contact-heading">Whitewater Rafting Excursions</h1>
         <div class="company-info">
-            <h2>Find us here at: </h2>
-            <p class="address">Address:</p>
-            <p class="street">1234 WeRHere Street</p>
-            <p class="state">Somewhere, WY</p>
-            <p class="zip">88888</p>
-            <p class="phone">Phone: </p>
-            <p class="ph-num">(555) 555-5555</p>
-            <p class="email">Email: </p>
-            <p class="em-addr">contact@wwrafting.com</p>
+            <h3>Find us here at: </h3>
+                <address class="info-types">
+                    Address:<br>  
+                    <br> 
+                    <br> 
+                    <br> 
+                    Phone:<br>       
+                    Email:              
+                </address>
+                <address class="address-info">
+                    1234 WeRHere Street<br>
+                    Somewhere, WY<br>
+                    88888<br>
+                    <br> 
+                    (555) 555-5555<br>
+                    contact@wwrafting.com
+                </address>                
             <div class="google-map">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10363.147481009562!2d-110.82512009615048!3d43.
                     2082275540128!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x535348030865e241%3A0x1178f330743770ac!2
                     sEast%20Table%20Boating%20Site!5e0!3m2!1sen!2sus!4v1749243011828!5m2!1sen!2sus" width="600"
-                    height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    height="450" allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade">
                 </iframe>
             </div>
@@ -52,27 +60,29 @@
         <div class="people">            
             <figure class="e1">
                 <img src="images/employee01.jpg" alt="Owner and Chief - John Doe">
-                <figcaption>Owner and Chief John Doe, has been in charge of Whitewater Rafting Excursions for the past
-                    15
-                    years and has loved every minute of it! Not only does he run the business aspects of our company,
-                    but you
-                    can also find him lending a helping hand with our tours.
+                <figcaption>
+                    <p> Owner and Chief John Doe, has been in charge of Whitewater Rafting Excursions for the past
+                    15 years and has loved every minute of it! Not only does he run the business aspects of our company,
+                    but you can also find him lending a helping hand with our tours.
+                    </p>
                 </figcaption>
             </figure>
             <figure class="e2">
                 <img src="images/employee02.jpg" alt="Assistant Chief - Danny Lee">
-                <figcaption>Assistant Chief Danny Lee has been at Whitewater Rafting Excursions for the past 7 years.
-                    You
-                    can find him both in the office or with you on the river.
-                    You will have a fantastic whitewater rafting experience with him.
-                <figcaption>                
+                <figcaption>
+                    <p> Assistant Chief Danny Lee has been at Whitewater Rafting Excursions for the past 7 years.
+                    He knows the company from top to bottom. No matter where he is, in the office or on the river, 
+                    you will have a fantastic whitewater rafting experience with him.
+                    </p>
+                </figcaption>                
             </figure>
             <figure class="e3">
                 <img src="images/employee03.jpg" alt="Tour Guide - AJ Cruz">
-                <figcaption>Tour Guide AJ Cruz has been with us for 3 years and is an expierienced guide both on and off
-                    the water who will not only provide you with a fantastic experience, but will keep you safe as you
-                    go. He is a
-                    certified Wilderness First Responder with 6 years of field experience.
+                <figcaption>
+                    <p> Tour Guide AJ Cruz has been with us for 3 years and is an expierienced guide both on and off
+                    the water who will provide you with a safe and fantastic experience. He is a currently certified 
+                    Wilderness First Responder with 6 years of field experience.
+                    </p>
                 </figcaption>
             </figure>
         </div>
@@ -82,24 +92,18 @@
                  <div class="fullname">
                     <label for="fullname">Name: </label>
                     <input type="text" id="fullname" name="fullname">
-                </div>
-                <div class="user-email">
                     <label for="useremail">Email: </label>
                     <input type="email" id="useremail" name="useremail">
                 </div>
-                <div class="group">
+                <div class="user-input">
                     <fieldset>
                         <legend>Any Questions?</legend>
                         <!--Radio buttons-->
                         <div>
                             <input type="radio" id="general" name="type-com">
                             <label for="general">General Inquiry</label>
-                        </div>
-                        <div>
                             <input type="radio" id="reservation" name="type-com">
                             <label for="general">Reservation Question</label>
-                        </div>
-                        <div>
                             <input type="radio" id="website" name="type-com">
                             <label for="general">Website Suggestion</label>
                         </div>

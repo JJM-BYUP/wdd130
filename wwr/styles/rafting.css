@@ -182,6 +182,7 @@ header {
 }
 
 /* Trip options */
+/* Trip options */
 #adventure {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -198,21 +199,17 @@ header {
 
 }
 
-.f01 img,
-.f02 img,
-.f03 img,
-.f04 img,
-.f05 img {
+#adventure img {
     height: 100px;
     width: 100px;
     margin: 10px;
+    margin-bottom: 3px;
 }
 
-.f01 figcaption,
-.f02 figcaption,
-.f03 figcaption,
-.f04 figcaption,
-.f05 figcaption {
+#adventure figcaption {
+    width: 100px;
+    padding: 0;
+    justify-self: center;
     font-family: var(--body-font);
     font-size: smaller;
 }
@@ -310,9 +307,7 @@ iframe {
     box-sizing: border-box;
 }
 
-.e1 img,
-.e2 img,
-.e3 img {
+.people img {
     display: block;
     width: 225px;
     height: 290px;
@@ -320,9 +315,7 @@ iframe {
     align-self: center;
 }
 
-.e1 figcaption,
-.e2 figcaption,
-.e3 figcaption {
+.people figcaption {
     /* display: block; */
     width: 225px;
     height: 300px;
@@ -335,7 +328,7 @@ iframe {
 
 form {
     margin-top: 55px;
-    margin-bottom: 55px;
+    margin-bottom: 30px;
     width: 840px;
     height: 400px;
     background-color: var(--primary-color);

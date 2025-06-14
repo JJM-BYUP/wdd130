@@ -152,13 +152,13 @@ header {
     grid-template-rows: repeat(3, 25px 185px);
     flex: 1 1 auto;
     gap: 0;
-    justify-items: center;   
+    justify-items: center;
 }
 
 .family-img img,
 .solo-img img,
 .large-group-img img {
-    
+
     width: 158px;
     height: 150px;
 }
@@ -167,17 +167,17 @@ header {
 .solo-text h3,
 .large-group-text h3 {
     font-size: 20px;
-    color: var(--accent1-color); 
+    color: var(--accent1-color);
     margin-top: 2px;
 }
 
 .family-text,
 .solo-text,
-.large-group-text {    
+.large-group-text {
     padding-bottom: 20px;
-    justify-items: center;  
-    color: var(--accent1-color); 
-    font-weight: 600;  
+    justify-items: center;
+    color: var(--accent1-color);
+    font-weight: 600;
     text-shadow: 0 0 1px var(--secondary-color);
 }
 
@@ -185,15 +185,15 @@ header {
     grid-column: 1 / 2;
     grid-row: 1 / span 2;
     padding-top: 28px;
-    background-color: var(--accent2-color);  
+    background-color: var(--accent2-color);
 }
 
 .family-text {
     grid-column: 2/3;
     grid-row: 1/3;
-    background-color: var(--accent2-color); 
+    background-color: var(--accent2-color);
     text-emphasis: var(--accent3-color);
-    text-shadow: 0 0 1px var(--secondary-color); 
+    text-shadow: 0 0 1px var(--secondary-color);
 }
 
 .solo-text,
@@ -202,7 +202,7 @@ header {
     grid-row: 3 / 5;
     background-color: var(--primary-color);
     color: var(--accent3-color);
-    font-weight: 700; 
+    font-weight: 700;
 }
 
 .solo-img {
@@ -227,7 +227,7 @@ header {
 
 .family-text p {
     background-color: var(--accent2-color);
-   
+
 }
 
 /* Newsletter user input - name & email */
@@ -241,7 +241,7 @@ header {
     margin-bottom: 5rem;
 }
 
-#newsletter {   
+#newsletter {
     width: 50%;
     height: 22rem;
     padding: 10px;
@@ -254,20 +254,20 @@ header {
     color: var(--accent3-color);
 }
 
-.sign-up { 
+.sign-up {
     font-size: 17px;
     font-weight: 800;
     text-align: left;
     margin-top: 24px;
     padding: 2px;
-    color: var(--accent3-color);    
+    color: var(--accent3-color);
 }
 
 .sign-up input {
-    width:19rem;
+    width: 19rem;
     height: 2rem;
     font-size: 10px;
-    margin-left: 5rem;    
+    margin-left: 5rem;
     border-width: 1.5px;
     border-style: outset;
     border-radius: 8px;
@@ -279,14 +279,14 @@ header {
     height: 22rem;
     width: 100%;
     margin-top: 55px;
-    
+
 }
 
 .call-home2 h2,
 a {
     margin-top: 4rem;
     text-align: center;
-    
+
 }
 
 .call-home2 h2 {
@@ -295,7 +295,7 @@ a {
     text-shadow: 0 0 5px var(--secondary-color);
 }
 
-.call-home2 a {   
+.call-home2 a {
     font-size: 18px;
     text-decoration: none;
     background-color: var(--primary-color);
@@ -305,13 +305,6 @@ a {
     border-radius: 8px;
     box-shadow: 0 0 8px var(--secondary-color);
 }
-
-
-
-
-
-
-
 
 /* About Us Page CSS */
 /*Hero image */
@@ -542,6 +535,73 @@ footer {
     font-size: 32px;
 }
 
+.experience {
+    width: 100%;
+    height: 53rem;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 45px repeat(3, 15rem);       
+    flex: 1 1 auto;  
+    justify-items: left;
+    text-align: left;
+    margin-top: 30px;
+    row-gap: 15px;
+}
+
+.experience h2 {
+   grid-column: 1 / span 3;
+   font-size: 39px; 
+}
+
+.trip-image1 img, 
+.trip-image2 img,
+.trip-image3 img {
+    width: 210px;
+    height: 200px;
+}
+
+.trip-paragraph1,
+.trip-paragraph2,
+.trip-paragraph3 {    
+    height: 200px;
+    margin: 0;
+    font-weight: 600;
+}
+
+.trip-image1 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+.trip-paragraph1 {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    background-color: var(--accent2-color);
+    color: #FFFFFF;
+}
+
+.trip-paragraph2 {
+    grid-column: 2/3;
+    grid-row: 3/4;
+    background-color: var(--secondary-color);
+    color: #FFFFFF;
+}
+
+.trip-image2 {
+    grid-column: 3/4;
+    grid-row: 3/4;
+}
+
+.trip-image3 {
+    grid-column: 1/2;
+    grid-row: 4/5;    
+}
+
+.trip-paragraph3 {
+    grid-column: 2/3;
+    grid-row: 4/5;
+    background-color: var(--primary-color);
+}
 
 
 
@@ -557,14 +617,6 @@ footer {
 
 
 
-
-
-
-
-
-/* .experience {
-    display: inline-block;
-} */
 
 
 /* .employees {

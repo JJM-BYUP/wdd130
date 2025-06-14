@@ -87,11 +87,236 @@ header {
     border-radius: 15px;
 }
 
-/* rafting.html page formatting */
-/*Hero image section*/
+/* Index - Home Page CSS */
+
+/* Home page hero img w/text */
+.home-hero img {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-bottom: 50px;
+}
+
+.home-hero h1 {
+    position: absolute;
+    top: 180px;
+    margin-left: 3%;
+    color: var(--accent1-color);
+    text-shadow: 3px 3px 10px var(--accent3-color);
+    font-size: 48px;
+    font-style: italic;
+}
+
+.home-hero h2 {
+    position: absolute;
+    top: 580px;
+    margin-left: 30rem;
+    color: var(--accent1-color);
+    text-shadow: 3px 3px 10px var(--accent3-color);
+    font-size: 34px;
+    font-style: italic;
+}
+
+/* Home call-to-action 1 */
+.call-home {
+    width: 100%;
+    height: auto;
+    margin-bottom: 60px;
+}
+
+.call-home h2 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.call-home a {
+    margin: 30px 0 4px 32%;
+    border-radius: 10px;
+    width: 15rem;
+    height: 3rem;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 26px;
+    background-color: var(--accent2-color);
+    color: var(--accent1-color);
+    box-shadow: 0 0 8px var(--secondary-color);
+}
+
+/* css grid w/ 2+ images and corresponding info */
+.general-information {
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: repeat(3, 25px 185px);
+    flex: 1 1 auto;
+    gap: 0;
+    justify-items: center;   
+}
+
+.family-img img,
+.solo-img img,
+.large-group-img img {
+    
+    width: 158px;
+    height: 150px;
+}
+
+.family-text h3,
+.solo-text h3,
+.large-group-text h3 {
+    font-size: 20px;
+    color: var(--accent1-color); 
+    margin-top: 2px;
+}
+
+.family-text,
+.solo-text,
+.large-group-text {    
+    padding-bottom: 20px;
+    justify-items: center;  
+    color: var(--accent1-color); 
+    font-weight: 600;  
+    text-shadow: 0 0 1px var(--secondary-color);
+}
+
+.family-img {
+    grid-column: 1 / 2;
+    grid-row: 1 / span 2;
+    padding-top: 28px;
+    background-color: var(--accent2-color);  
+}
+
+.family-text {
+    grid-column: 2/3;
+    grid-row: 1/3;
+    background-color: var(--accent2-color); 
+    text-emphasis: var(--accent3-color);
+    text-shadow: 0 0 1px var(--secondary-color); 
+}
+
+.solo-text,
+.solo-text h3 {
+    grid-column: 2 / 3;
+    grid-row: 3 / 5;
+    background-color: var(--primary-color);
+    color: var(--accent3-color);
+    font-weight: 700; 
+}
+
+.solo-img {
+    grid-column: 3/4;
+    grid-row: 3/5;
+    padding-top: 28px;
+    background-color: var(--primary-color);
+}
+
+.large-group-img {
+    grid-column: 1/2;
+    grid-row: 5/7;
+    padding-top: 28px;
+    background-color: var(--secondary-color);
+}
+
+.large-group-text {
+    grid-column: 2/3;
+    grid-row: 5/7;
+    background-color: var(--secondary-color);
+}
+
+.family-text p {
+    background-color: var(--accent2-color);
+   
+}
+
+/* Newsletter user input - name & email */
+
+.news-call {
+    display: flex;
+    width: 100%;
+    height: 21.6rem;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+#newsletter {   
+    width: 50%;
+    height: 22rem;
+    padding: 10px;
+    text-align: center;
+}
+
+#newsletter h3 {
+    margin-top: 3px;
+    font-size: 25px;
+    color: var(--accent3-color);
+}
+
+.sign-up { 
+    font-size: 17px;
+    font-weight: 800;
+    text-align: left;
+    margin-top: 24px;
+    padding: 2px;
+    color: var(--accent3-color);    
+}
+
+.sign-up input {
+    width:19rem;
+    height: 2rem;
+    font-size: 10px;
+    margin-left: 5rem;    
+    border-width: 1.5px;
+    border-style: outset;
+    border-radius: 8px;
+    box-shadow: 0 0 3px var(--secondary-color);
+}
+
+.call-home2 {
+    background-color: var(--accent2-color);
+    height: 22rem;
+    width: 100%;
+    margin-top: 55px;
+    
+}
+
+.call-home2 h2,
+a {
+    margin-top: 4rem;
+    text-align: center;
+    
+}
+
+.call-home2 h2 {
+    font-size: 34px;
+    color: var(--accent1-color);
+    text-shadow: 0 0 5px var(--secondary-color);
+}
+
+.call-home2 a {   
+    font-size: 18px;
+    text-decoration: none;
+    background-color: var(--primary-color);
+    color: var(--accent3-color);
+    font-weight: 700;
+    padding: 8px;
+    border-radius: 8px;
+    box-shadow: 0 0 8px var(--secondary-color);
+}
+
+
+
+
+
+
+
+
+/* About Us Page CSS */
+/*Hero image */
 .hero {
     position: relative;
-    font-family: var(--heading-font);
 }
 
 .hero img {
@@ -133,7 +358,7 @@ header {
     width: 140px;
     margin: 15px;
     border: #23395b;
-    box-shadow: 0 0 4px#16253a;
+    box-shadow: 0 0 4px #16253a;
 }
 
 /* Company history - short */
@@ -182,7 +407,6 @@ header {
 }
 
 /* Trip options */
-/* Trip options */
 #adventure {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -196,7 +420,6 @@ header {
     grid-column: 1 / 6;
     align-content: center;
     justify-content: center;
-
 }
 
 #adventure img {
@@ -231,7 +454,231 @@ footer {
     text-decoration: none;
 }
 
-/* contact.html page formatting: header & footer (+ wireframe link) done*/
+
+/* Trips Page CSS */
+/* Call-to-action section */
+.action-call {
+    position: relative;
+    font-family: var(--heading-font);
+}
+
+.action-call img {
+    width: 100%;
+    height: auto;
+    box-shadow: 0 0 4px 2px lightgray;
+}
+
+.action-call h1,
+.action-call h2,
+.action-call h3,
+.action-call article h3,
+.action-call a {
+    border-radius: 10px;
+    text-align: center;
+    padding: 5px;
+}
+
+.action-call h1,
+.action-call h2,
+.action-call h3,
+.action-call article h3 {
+    background-color: var(--accent1-color);
+    opacity: 0.8;
+    box-shadow: 0 0 4px 2px var(--secondary-color);
+}
+
+.action-call h1 {
+    position: absolute;
+    top: 230px;
+    width: 20rem;
+    margin-left: 3.2rem;
+    font-size: 44px;
+}
+
+.action-call h2 {
+    position: absolute;
+    top: 80px;
+    width: 18rem;
+    margin-left: .8rem;
+    font-size: 34px;
+}
+
+.action-call h3 {
+    position: absolute;
+    top: 400px;
+    width: 21rem;
+    margin-left: .8rem;
+    font-size: 28px;
+}
+
+.action-call article h3,
+.action-call a {
+    font-size: 30px;
+}
+
+.action-call article h3 {
+    position: absolute;
+    top: 350px;
+    width: 15rem;
+    margin-left: 63%;
+}
+
+.action-call article a {
+    position: absolute;
+    top: 417px;
+    width: 11rem;
+    margin-left: 67%;
+    color: var(--accent1-color);
+    text-decoration: none;
+    background-color: var(--accent2-color);
+    opacity: 0.95;
+    border: 1px solid var(--secondary-color);
+    box-shadow: 0 0 6px 1px var(--secondary-color);
+}
+
+/* 3 Detailed Trips Section */
+.trip-description h2,
+.trip-information {
+    font-size: 32px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .experience {
+    display: inline-block;
+} */
+
+
+/* .employees {
+    font-size: 28px;
+    background-color: var(--primary-color);
+    width: 100%;
+    height: 4rem;
+    text-align: center;
+    padding: 10px 0;
+    margin: 0;
+}
+
+.people {
+    width: 840px;
+    display: flex;
+    grid-template-columns: repeat(3, 1fr);
+    flex: 1 1 auto;
+    padding: 0;
+    margin: 0;
+    justify-items: center;
+    justify-content: space-evenly;
+    box-sizing: border-box;
+}
+
+.people img {
+    display: block;
+    width: 225px;
+    height: 290px;
+    justify-self: center;
+    align-self: center;
+}
+
+.people figcaption {  
+    width: 225px;
+    height: 300px;
+    padding: 5px;
+    background-color: var(--accent2-color);
+    color: #FFFFFF;
+} */
+
+
+
+/* Trip table */
+.trip-information {
+    text-align: right;
+    margin-right: 60px;
+}
+
+#trip-information {
+    border-collapse: collapse;
+    margin: 10px 0 25px 0;
+    font-size: .9rem;
+    min-width: 840px;
+}
+
+#trip-information th,
+td {
+    padding: 5px;
+}
+
+#trip-information thead tr {
+    background-color: var(--accent2-color);
+    color: var(--accent1-color);
+    text-align: left;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+#trip-information tbody tr {
+    border-bottom: 1px solid var(--secondary-color);
+}
+
+#trip-information tbody td {
+    border-left: 1px solid var(--secondary-color);
+}
+
+#trip-information tbody td:first-child {
+    border-left: none;
+}
+
+#trip-information tbody tr:last-of-type {
+    border-bottom: 2px solid var(--accent2-color);
+}
+
+#trip-information tbody tr:nth-of-type(even) {
+    background-color: #FFE5B6;
+}
+
+#trip-information tbody tr:nth-of-type(ODD) {
+    background-color: #FFF9ED;
+}
+
+/* 2nd Call-to-Action */
+
+.question {
+    text-align: center;
+    font-size: 28px;
+    margin-top: 60px;
+}
+
+#find-out {
+    margin-left: 300px;
+    margin-top: 25px;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    width: 15rem;
+    height: 3rem;
+    padding: 5px;
+    background-color: var(--accent2-color);
+    color: var(--accent1-color);
+}
+
+/* Contact Page CSS*/
+/* Company Information */
 .contact-heading {
     width: 840px;
     font-size: 33px;
@@ -316,7 +763,6 @@ iframe {
 }
 
 .people figcaption {
-    /* display: block; */
     width: 225px;
     height: 300px;
     padding: 5px;

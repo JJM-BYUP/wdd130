@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
@@ -15,8 +16,9 @@
         rel="stylesheet">
     <link rel="stylesheet" href="styles/rafting.css">
 </head>
+
 <body>
-     <header>
+    <header>
         <img class="logo" src="images/z-wwr-blue.jpg" alt="Whitewater Rafting Logo">
         <nav class="navagation-links">
             <a href="index.html">Home</a>
@@ -27,8 +29,96 @@
     </header>
 
     <main>
+        <!-- Hero image with h1 overlay/float-->
+        <div class="home-hero">
+            <img src="images/home-hero.jpg" alt="Extreme rafting">
+            <h1>Incredible Adventures Await...</h1>
+            <h2>Drop in and see us!</h2>
+        </div>
 
-    </main>    
+        <!-- Call-to-action w/ link to trips.html pg-->
+        <div class="call-home">
+            <h2>We have the trip for you!</h2>
+            <a href="trips.html">Check them out here...</a>
+        </div>
+
+        <!-- css grid w/ 2+ images and corresponding info-->
+        <section class="general-information">
+            <div class="family-img">
+                <img src="images/middle-flats.jpg" alt="Family friendly rafting">
+            </div>
+            <div class="family-text">
+                <h3>Does your family need something fun to do?</h3>
+                <p>Whether you want to gently glide down the river's gently lapping waves
+                    or whether you want to experience the high-octane adrenaline rush of churning rapids,
+                    we have trips and classes for the whole family.
+                    Starting with a simple float for children 4 years old and and older, there are many other options
+                    for both adults and children depending on their age and skill levels.
+                </p>
+            </div>
+            <div class="solo-text">
+                <h3>Solo travelers, do you need to get away?</h3>
+                <p>If you happen to be traveling solo, we can hook you up with a multitude of choices.
+                    You can hop in with any of our regular tours or you could rent either a raft or a kayaks to float on
+                    your own.
+                    We could also arrange a private tour if you'd prefer to fish or shoot the rapids one on one.
+                    From small tours to boat or kayak rentals, we have all the options you'll need at whatever level you
+                    care to experience.
+                </p>
+            </div>
+            <div class="solo-img">
+                <img src="images/home-solo.jpg" alt="Solo kayaking">
+            </div>
+            <div class="large-group-img">
+                <img src="images/home-large-groups.jpg" alt="Rafting for large groups">
+            </div>
+            <div class="large-group-text">
+                <h3 class="large-group-h">Can we accommodate large groups? YES!</h3>
+                <p class="large-group-p">Do you have a family reunion or corporate retreat you need to plan for?
+                    We've got just the trip for you! With a four-week notice, we can plan an unforgettable adventure
+                    that everyone will talk about for years. Just give us a phone call or send us an email
+                    and we'll get you set up!
+                </p>
+            </div>
+        </section>
+
+        <!-- newsletter sign up form w/ name & email-->
+        <div class="news-call">
+            <form id="newsletter">
+                <h3>For current river conditions, sesonal activities, <br>
+                    and more - <br>
+                    <br>
+                    Sign up for our short weekly newsletter:
+                </h3>
+                <div class="sign-up">
+                    <label for="fullname">Name: </label>
+                    <input type="text" id="fullname" name="fullname">
+                    <label for="useremail">Email: </label>
+                    <input type="email" id="useremail" name="useremail">
+                </div>
+            </form>
+        
+
+        <!-- 2nd call-to-action w/ link to trips.html pg-->
+            <div class="call-home2">
+                <h2>Are you ready <br>
+                    to dip your toes <br>
+                    or jump on in?</h2>
+                    <br>
+                    <br>
+                    <br>
+                <a href="trips.html">Check out all our options here!</a>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+    </main>
 
     <footer>
         <p>&copy;2025 • Whitewater Rafting Excursions • Jennifer Merritt</p>
@@ -45,4 +135,5 @@
         </nav>
     </footer>
 </body>
+
 </html>
